@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  productionBrowserSourceMaps: true,
+  compiler: {
+    removeConsole: true,
+    emotion: {
+      sourceMap: true,
+    },
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
